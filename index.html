@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>AluraDEV</title>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img src="./src/img/logo.png" alt="Logo AluraDEV" class="logo" />
+      <div class="acoes">
+        <div class="buscar">
+          <input
+            type="text"
+            name="pesquisar"
+            id="pesquisar"
+            class="buscar__input"
+            placeholder="Busque por algo"
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <i class="fa-solid fa-xmark"></i>
+        <nav class="menu">
+          <i class="fa-solid fa-bars"></i>
+          <ul id="menu-lista" class="menu__lista">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">
+                <div class="menu__link__icone temp">
+                  <img
+                    src="./src/img/icone-editor.svg"
+                    alt=""
+                    class="menu__link__imagem"
+                  />
+                </div>
+                <span class="menu__link__texto">Editor de código</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./comunidade.html" class="menu__link">
+                <div class="menu__link__icone">
+                  <img
+                    src="./src/img/icone-comunidade.svg"
+                    alt=""
+                    class="menu__link__imagem"
+                  />
+                </div>
+                <span class="menu__link__texto">Comunidade</span>
+              </a>
+            </li>
+            <span class="menu__divisor"></span>
+            <div class="menu__usuario">
+              <img
+                src="./src/img/foto-login.png"
+                alt="Foto do perfil do usuário"
+                class="menu__usuario__imagem"
+              />
+              <span class="menu__usuario__nome">Harry</span>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <div class="usuario-perfil">
+        <img
+          src="./src/img/foto-login.png"
+          alt="Foto do perfil do usuário"
+          class="usuario-perfil__imagem"
+        />
+        <span class="usuario-perfil__nome">Harry</span>
+      </div>
+    </header>
+    <main class="principal">
+      <aside class="menu-navegacao">
+        <div class="menu-nav">
+          <span class="menu-nav__titulo">Menu</span>
+          <a href="./index.html" class="menu-nav__item">
+            <div class="menu-nav__item__icone">
+              <img
+                src="./src/img/icone-editor.svg"
+                alt=""
+                class="menu-nav__item__imagem"
+              />
+            </div>
+            <span class="menu-nav__item__texto branco">Editor de código</span>
+          </a>
+          <a href="./comunidade.html" class="menu-nav__item">
+            <div class="menu-nav__item__icone">
+              <img
+                src="./src/img/icone-comunidade.svg"
+                alt=""
+                class="menu-nav__item__imagem"
+              />
+            </div>
+            <span class="menu-nav__item__texto">Comunidade</span>
+          </a>
+        </div>
+      </aside>
+      <section class="editor">
+        <div class="editor__container">
+          <div class="editor__conteudo">
+            <img src="./src/img/mac-buttons.svg" alt="" class="mac-buttons" />
+            <textarea
+              name="codigo"
+              id="codigo"
+              class="editor__box"
+              cols="30"
+              rows="10"
+            >
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+          
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+}</textarea
+            >
+          </div>
+        </div>
+        <button class="botao-highlight">Visualizar com o highlight</button>
+      </section>
+      <aside class="menu-criacao">
+        <form class="formulario">
+          <div class="formulario__inputs">
+            <span class="formulario__inputs__titulo">Seu projeto</span>
+            <input
+              type="text"
+              name="nome-projeto"
+              id="nome-projeto"
+              class="formulario__inputs__nome"
+              placeholder="Nome do seu projeto"
+            />
+            <input
+              type="text"
+              name="descricao-projeto"
+              id="descricao-projeto"
+              class="formulario__inputs__descricao"
+              placeholder="Descrição do seu projeto"
+            />
+          </div>
+          <div class="formulario__select">
+            <span class="formulario__select__titulo">Personalização</span>
+            <select
+              name="linguagens"
+              id="linguagens"
+              class="formulario__select__linguagens"
+            >
+              <option value="Selecionar linguagem" selected disabled>
+                Selecione uma linguagem
+              </option>
+              <option value="Javascript">Javascript</option>
+              <option value="Python">Python</option>
+              <option value="Java">Java</option>
+              <option value="HTML">HTML</option>
+              <option value="C#">C#</option>
+              <option value="PHP">PHP</option>
+            </select>
+
+            <input
+              type="color"
+              name="cor-linguagem"
+              id="cor-linguagem"
+              class="formulario__select__cor"
+              value="#FFFFFF"
+            />
+          </div>
+          <button type="submit" class="formulario__botao">
+            Salvar projeto
+          </button>
+        </form>
+      </aside>
+    </main>
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

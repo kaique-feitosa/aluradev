@@ -1,0 +1,153 @@
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1em 0 1em;
+}
+
+.acoes {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.fa-solid {
+  font-size: 22px;
+}
+
+.buscar {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.buscar__input {
+  display: none;
+  background-color: var(--bg-input);
+  border-radius: 8px;
+  color: var(--color-input);
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1em 0 1em 1em;
+  width: 78vw;
+}
+
+.buscar__input::placeholder {
+  color: var(--color-input);
+}
+
+.fa-xmark {
+  display: none;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu__lista {
+  display: none;
+  flex-direction: column;
+  background-color: var(--bg-input);
+  border-radius: 8px;
+  position: absolute;
+  right: 0;
+  margin: 1.75em 0;
+  padding: 1.5em;
+  height: 85vh;
+  width: 254px;
+}
+
+.menu__link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 1em;
+}
+
+.menu__link__icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--azul-botao-desativado);
+  border-radius: 16px;
+  height: 48px;
+  width: 48px;
+}
+
+.menu__link__imagem {
+  opacity: 48%;
+}
+
+.menu__link__texto {
+  color: var(--branco);
+  opacity: 48%;
+}
+
+.menu__divisor {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 0.5em;
+}
+
+.usuario-perfil,
+.menu__usuario {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1.5em;
+}
+
+.usuario-perfil {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .cabecalho {
+    gap: 40px;
+    padding: 2em 2em 0 2em;
+  }
+
+  .buscar {
+    gap: 40px;
+  }
+
+  .buscar__input {
+    display: block;
+    width: 62.5vw;
+  }
+
+  .buscar .fa-magnifying-glass {
+    display: none;
+  }
+
+  .menu__lista {
+    height: 83vh;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cabecalho {
+    align-items: center;
+  }
+
+  .buscar__input {
+    width: 49.5vw;
+  }
+
+  .usuario-perfil {
+    display: flex;
+    margin: 0;
+  }
+
+  .acoes {
+    gap: 0;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .usuario-perfil {
+    display: flex;
+  }
+}

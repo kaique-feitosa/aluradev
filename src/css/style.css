@@ -1,0 +1,57 @@
+@import url("./cabecalho.css");
+@import url("./editor.css");
+@import url("./menu-criacao.css");
+@import url("./projetos.css");
+@import url('./menu-navegacao.css');
+
+:root {
+  --azul-bg: #051d3b;
+  --azul-botao: #5081fb;
+  --azul-botao-desativado: rgba(80, 129, 251, 0.16);
+  --azul-hover: #7ba4fc;
+  --azul-focus: #96b9fd;
+  --azul-highlight: rgba(80, 129, 251, 0.08);
+  --bg-input: rgba(255, 255, 255, 0.16);
+  --bg-postagem: rgba(0, 0, 0, 0.16);
+  --color-input: rgba(255, 255, 255, 0.64);
+  --branco: #ffffff;
+
+  --fonte-principal: "Inter", sans-serif;
+  --fonte-codigo: "Roboto Mono", monospace;
+}
+
+* {
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--azul-bg);
+  color: var(--branco);
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+  font-weight: 400;
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  padding: 2.5em 1em;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 2.5em 2em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .principal {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}
