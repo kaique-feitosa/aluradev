@@ -37,8 +37,10 @@
         </div>
         <i class="fa-solid fa-xmark"></i>
         <nav class="menu">
-          <i class="fa-solid fa-bars"></i>
-          <ul class="menu__lista">
+          <button class="menu-botao">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul id="menu-lista" class="menu__lista">
             <li class="menu__item">
               <a href="./index.html" class="menu__link">
                 <div class="menu__link__icone">
@@ -113,103 +115,10 @@
       <section class="projetos">
         <div class="projeto">
           <div class="projeto__codigo">
-            <div class="projeto__codigo__conteudo">
+            <pre class="projeto__codigo__conteudo">
               <img src="./src/img/mac-buttons.svg" alt="" class="mac-buttons" />
-              <p id="codigo" class="editor__box">
-                const pluckDeep = key => obj => key.split('.').reduce((accum,
-                key) => accum[key], obj) const compose = (...fns) => res =>
-                fns.reduce((accum, next) => next(accum), res) const unfold = (f,
-                seed) => { const go = (f, seed, acc) => { const res = f(seed)
-                return res ? go(f, res[1], acc.concat([res[0]])) : acc } return
-                go(f, seed, []) }
-              </p>
-            </div>
-          </div>
-          <div class="projeto__postagem">
-            <div class="projeto__infos">
-              <h3 class="projeto__infos__titulo">Título do projeto</h3>
-              <p class="projeto__infos__descricao">
-                Essa é a descrição do meu projeto.
-              </p>
-            </div>
-            <div class="projeto__interacoes">
-              <div class="interacoes">
-                <div class="interacoes__comentarios">
-                  <i class="fa-solid fa-comment"></i>
-                  <span class="interacoes__comentarios__numeros">9</span>
-                </div>
-                <div class="interacoes__reacoes">
-                  <i class="fa-solid fa-heart"></i>
-                  <span class="interacoes__reacoes__numeros">9</span>
-                </div>
-              </div>
-              <div class="usuario">
-                <img
-                  src="./src/img/foto-login.png"
-                  alt="Foto de perfil do usuário"
-                  class="usuario__foto"
-                />
-                <span class="usuario__nome">@Harry</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="projeto">
-          <div class="projeto__codigo">
-            <div class="projeto__codigo__conteudo">
-              <img src="./src/img/mac-buttons.svg" alt="" class="mac-buttons" />
-              <p id="codigo" class="editor__box">
-                const pluckDeep = key => obj => key.split('.').reduce((accum,
-                key) => accum[key], obj) const compose = (...fns) => res =>
-                fns.reduce((accum, next) => next(accum), res) const unfold = (f,
-                seed) => { const go = (f, seed, acc) => { const res = f(seed)
-                return res ? go(f, res[1], acc.concat([res[0]])) : acc } return
-                go(f, seed, []) }
-              </p>
-            </div>
-          </div>
-          <div class="projeto__postagem">
-            <div class="projeto__infos">
-              <h3 class="projeto__infos__titulo">Título do projeto</h3>
-              <p class="projeto__infos__descricao">
-                Essa é a descrição do meu projeto.
-              </p>
-            </div>
-            <div class="projeto__interacoes">
-              <div class="interacoes">
-                <div class="interacoes__comentarios">
-                  <i class="fa-solid fa-comment"></i>
-                  <span class="interacoes__comentarios__numeros">9</span>
-                </div>
-                <div class="interacoes__reacoes">
-                  <i class="fa-solid fa-heart"></i>
-                  <span class="interacoes__reacoes__numeros">9</span>
-                </div>
-              </div>
-              <div class="usuario">
-                <img
-                  src="./src/img/foto-login.png"
-                  alt="Foto de perfil do usuário"
-                  class="usuario__foto"
-                />
-                <span class="usuario__nome">@Harry</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="projeto">
-          <div class="projeto__codigo">
-            <div class="projeto__codigo__conteudo">
-              <img src="./src/img/mac-buttons.svg" alt="" class="mac-buttons" />
-              <p id="codigo" class="editor__box">
-                const pluckDeep = key => obj => key.split('.').reduce((accum,
-                key) => accum[key], obj) const compose = (...fns) => res =>
-                fns.reduce((accum, next) => next(accum), res) const unfold = (f,
-                seed) => { const go = (f, seed, acc) => { const res = f(seed)
-                return res ? go(f, res[1], acc.concat([res[0]])) : acc } return
-                go(f, seed, []) }
-              </p>
-            </div>
+              <code id="codigo" class="editor__box">Aqui vai o código.</code>
+            </pre>
           </div>
           <div class="projeto__postagem">
             <div class="projeto__infos">

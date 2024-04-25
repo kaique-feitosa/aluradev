@@ -43,4 +43,20 @@
     color: var(--branco);
     opacity: 56%;
   }
+
+  .menu-nav__item:hover .menu-nav__item__icone {
+    background-color: rgba(80, 129, 251, 0.64);
+  }
+
+  .menu-nav__item:hover {
+    opacity: 72%;
+  }
+
+  .menu-nav__item:active .menu-nav__item__icone {
+    background-color: var(--azul-botao);
+  }
+
+  .menu-nav__item:active {
+    opacity: 100%;
+  }
 }

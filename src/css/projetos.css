@@ -55,6 +55,12 @@
   gap: 16px;
 }
 
+.interacoes__comentarios,
+.interacoes__reacoes {
+  padding: 0.5em;
+  border-radius: 16px;
+}
+
 .interacoes__comentarios__numeros,
 .interacoes__reacoes__numeros {
   padding-left: 0.5em;
@@ -65,12 +71,20 @@
   justify-content: space-between;
   align-items: center;
   gap: 8px;
+  border-radius: 8px;
+  padding: 0.5em;
 }
 
-.interacoes__comentarios,
-.interacoes__reacoes,
-.usuario {
-  cursor: pointer;
+.usuario__foto {
+  width: 24px;
+  height: 24px;
+}
+
+/* PSEUDO-CLASSES */
+.usuario:active,
+.interacoes__comentarios:active,
+.interacoes__reacoes:active {
+  background-color: rgba(255, 255, 255, 0.16);
 }
 
 @media screen and (min-width: 768px) {
@@ -79,7 +93,7 @@
   }
 
   .projeto__infos__titulo {
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
   }
 }
 
@@ -98,6 +112,22 @@
   }
 
   .projeto__codigo {
-    height: 32vh;
+    height: 45vh;
+  }
+
+  .projeto__interacoes {
+    display: none;
+  }
+
+  /* HOVER */
+  .projeto:hover .projeto__interacoes {
+    display: flex;
+  }
+
+  .usuario:hover,
+  .interacoes__comentarios:hover,
+  .interacoes__reacoes:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    cursor: pointer;
   }
 }

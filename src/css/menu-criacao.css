@@ -67,6 +67,7 @@
 
 .formulario__botao {
   background-color: var(--azul-botao);
+  border: 4px solid transparent;
   border-radius: 8px;
   color: var(--azul-bg);
   font-family: var(--fonte-principal);
@@ -75,6 +76,20 @@
   margin: 2em 0;
   padding: 1em;
   width: 100%;
+}
+
+/* PSEUDO-CLASSES */
+.formulario__inputs__nome:focus,
+.formulario__inputs__descricao:focus {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.formulario__botao:active {
+  border-color: rgba(80, 129, 251, 0.72);
+}
+
+.formulario__botao:focus {
+  background-color: var(--azul-focus);
 }
 
 @media screen and (min-width: 768px) {
@@ -105,5 +120,21 @@
   .formulario__select {
     display: flex;
     flex-direction: column;
+  }
+
+  /* HOVER */
+  .formulario__inputs__nome:hover,
+  .formulario__inputs__descricao:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+  }
+
+  .formulario__select__linguagens:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+    cursor: pointer;
+  }
+
+  .formulario__botao:hover {
+    background-color: var(--azul-hover);
+    cursor: pointer;
   }
 }

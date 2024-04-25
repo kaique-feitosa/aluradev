@@ -8,7 +8,7 @@
 .acoes {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 26px;
 }
 
 .fa-solid {
@@ -39,6 +39,17 @@
 
 .fa-xmark {
   display: none;
+}
+
+.menu-botao {
+  background-color: transparent;
+  border-radius: 16px;
+  height: 48px;
+  width: 48px;
+}
+
+.fa-bars {
+  color: var(--branco);
 }
 
 .menu {
@@ -75,13 +86,12 @@
   width: 48px;
 }
 
-.menu__link__imagem {
+.menu__link {
   opacity: 48%;
 }
 
 .menu__link__texto {
   color: var(--branco);
-  opacity: 48%;
 }
 
 .menu__divisor {
@@ -99,6 +109,25 @@
 
 .usuario-perfil {
   display: none;
+  padding: 0.75em;
+  border-radius: 8px;
+}
+
+/* PSEUDO-CLASSES */
+.menu__link:focus {
+  opacity: 100%;
+}
+
+.menu__link:focus .menu__link__icone {
+  background-color: var(--azul-botao);
+}
+
+.buscar__input:focus {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.menu-botao:active {
+  background-color: rgba(80, 129, 251, 0.16);
 }
 
 @media screen and (min-width: 768px) {
@@ -122,6 +151,7 @@
 
   .menu__lista {
     height: 83vh;
+    right: 12px;
   }
 }
 
@@ -131,7 +161,8 @@
   }
 
   .buscar__input {
-    width: 49.5vw;
+    width: 55vw;
+    margin-right: 4em;
   }
 
   .usuario-perfil {
@@ -149,5 +180,15 @@
 
   .usuario-perfil {
     display: flex;
+  }
+
+  /* HOVER */
+  .buscar__input:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+  }
+
+  .usuario-perfil:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    cursor: pointer;
   }
 }

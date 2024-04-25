@@ -37,11 +37,13 @@
         </div>
         <i class="fa-solid fa-xmark"></i>
         <nav class="menu">
-          <i class="fa-solid fa-bars"></i>
+          <button class="menu-botao">
+            <i class="fa-solid fa-bars"></i>
+          </button>
           <ul id="menu-lista" class="menu__lista">
             <li class="menu__item">
               <a href="./index.html" class="menu__link">
-                <div class="menu__link__icone temp">
+                <div class="menu__link__icone">
                   <img
                     src="./src/img/icone-editor.svg"
                     alt=""
@@ -114,24 +116,7 @@
         <div class="editor__container">
           <div class="editor__conteudo">
             <img src="./src/img/mac-buttons.svg" alt="" class="mac-buttons" />
-            <textarea
-              name="codigo"
-              id="codigo"
-              class="editor__box"
-              cols="30"
-              rows="10"
-            >
-const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-          
-const unfold = (f, seed) => {
-  const go = (f, seed, acc) => {
-    const res = f(seed)
-    return res ? go(f, res[1], acc.concat([res[0]])) : acc
-  }
-  return go(f, seed, [])
-}</textarea
-            >
+            <pre><code name="codigo" id="codigo" class="editor__box" contenteditable="true" aria-label="editor de código">Digite seu código</code></pre>
           </div>
         </div>
         <button class="botao-highlight">Visualizar com o highlight</button>
