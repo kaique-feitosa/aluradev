@@ -51,6 +51,10 @@ main {
   display: flex;
 }
 
+.fill {
+  color: #f65151;
+}
+
 @media screen and (min-width: 768px) {
   main {
     padding: 2.5em 2em;

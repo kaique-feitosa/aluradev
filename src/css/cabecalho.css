@@ -8,11 +8,6 @@
 .acoes {
   display: flex;
   align-items: center;
-  gap: 26px;
-}
-
-.fa-solid {
-  font-size: 22px;
 }
 
 .buscar {
@@ -37,13 +32,10 @@
   color: var(--color-input);
 }
 
-.fa-xmark {
-  display: none;
-}
-
 .menu-botao, 
 .pesquisar-botao,
-.close-pesquisar {
+.close-pesquisar,
+.botao-favorito {
   background-color: transparent;
   border-radius: 16px;
 }
@@ -51,6 +43,10 @@
 .material-symbols-outlined {
   color: var(--branco);
   font-size: 2rem;
+}
+
+.pesquisar-icone {
+      margin-right: .7em;
 }
 
 .close-pesquisar {
@@ -141,16 +137,20 @@
     padding: 2em 2em 0 2em;
   }
 
+  .acoes {
+    gap: 26px;
+  }
+
   .buscar {
     gap: 40px;
   }
 
   .buscar__input {
     display: block;
-    width: 62.5vw;
+    width: 59.5vw;
   }
 
-  .buscar .fa-magnifying-glass {
+  .pesquisar-botao {
     display: none;
   }
 
@@ -179,7 +179,8 @@
     gap: 0;
   }
 
-  .fa-bars {
+  .menu,
+  .pesquisar-icone {
     display: none;
   }
 
