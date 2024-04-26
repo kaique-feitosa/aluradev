@@ -19,6 +19,7 @@
     />
     <title>AluraDEV</title>
     <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/dracula.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
@@ -116,7 +117,7 @@
         <div class="editor__container">
           <div class="editor__conteudo">
             <img src="./src/img/mac-buttons.svg" alt="" class="mac-buttons" />
-            <pre><code name="codigo" id="codigo" class="editor__box" contenteditable="true" aria-label="editor de código">Digite seu código</code></pre>
+            <code id="codigo" class="editor__box hljs" contenteditable="true" aria-label="Editor de código"></code>
           </div>
         </div>
         <button class="botao-highlight">Visualizar com o highlight</button>
@@ -173,6 +174,7 @@
       </aside>
     </main>
 
-    <script src="./src/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script type="module" src="./src/js/index.js"></script>
   </body>
 </html>

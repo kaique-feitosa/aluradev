@@ -31,21 +31,19 @@
   margin-bottom: 1.5em;
 }
 
-pre {
-  word-wrap: break-word;
-  white-space: pre-wrap;
-  margin: 0;
-}
-
 .editor__box {
   background-color: transparent;
   color: var(--branco);
   font-family: var(--fonte-codigo);
   font-size: 0.75rem;
   line-height: 18.46px;
-  resize: none;
-  max-height: calc(100% - 16px);
-  max-width: calc(100% - 16px);
+  height: 100%;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+code.hljs {
+  padding: 0;
 }
 
 .botao-highlight {
