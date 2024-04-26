@@ -41,15 +41,20 @@
   display: none;
 }
 
-.menu-botao {
+.menu-botao, 
+.pesquisar-botao,
+.close-pesquisar {
   background-color: transparent;
   border-radius: 16px;
-  height: 48px;
-  width: 48px;
 }
 
-.fa-bars {
+.material-symbols-outlined {
   color: var(--branco);
+  font-size: 2rem;
+}
+
+.close-pesquisar {
+  display: none;
 }
 
 .menu {

@@ -38,8 +38,17 @@ body {
 }
 
 main {
+  display: block;
   padding: 2.5em 1em;
   height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
