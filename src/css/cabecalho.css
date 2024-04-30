@@ -75,6 +75,7 @@
   align-items: center;
   gap: 16px;
   margin-bottom: 1em;
+  opacity: 48%;
 }
 
 .menu__link__icone {
@@ -85,10 +86,6 @@
   border-radius: 16px;
   height: 48px;
   width: 48px;
-}
-
-.menu__link {
-  opacity: 48%;
 }
 
 .menu__link__texto {
@@ -129,6 +126,15 @@
 
 .menu-botao:active {
   background-color: rgba(80, 129, 251, 0.16);
+}
+
+/* LINKS ATIVOS */
+.menu__link--ativo {
+  opacity: 100%;
+}
+
+.menu__link__icone--ativo {
+  background-color: var(--azul-botao);
 }
 
 @media screen and (min-width: 768px) {

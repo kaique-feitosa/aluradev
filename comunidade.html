@@ -23,6 +23,7 @@
     />
     <title>AluraDEV</title>
     <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/dracula.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
@@ -37,7 +38,7 @@
             class="buscar__input"
             placeholder="Busque por algo"
           />
-          <button class="pesquisar-botao">
+          <button id="pesquisar-botao" class="pesquisar-botao">
             <span class="material-symbols-outlined pesquisar-icone">
               search
             </span>
@@ -64,8 +65,8 @@
               </a>
             </li>
             <li class="menu__item">
-              <a href="./comunidade.html" class="menu__link">
-                <div class="menu__link__icone">
+              <a href="./comunidade.html" class="menu__link menu__link--ativo">
+                <div class="menu__link__icone menu__link__icone--ativo">
                   <img
                     src="./src/img/icone-comunidade.svg"
                     alt=""
@@ -108,60 +109,29 @@
                 class="menu-nav__item__imagem"
               />
             </div>
-            <span class="menu-nav__item__texto branco">Editor de código</span>
+            <span class="menu-nav__item__texto">Editor de código</span>
           </a>
-          <a href="#" class="menu-nav__item">
-            <div class="menu-nav__item__icone">
+          <a
+            href="./comunidade.html"
+            class="menu-nav__item menu-nav__item--ativo"
+          >
+            <div class="menu-nav__item__icone menu-nav__item__icone--ativo">
               <img
                 src="./src/img/icone-comunidade.svg"
                 alt=""
                 class="menu-nav__item__imagem"
               />
             </div>
-            <span class="menu-nav__item__texto">Comunidade</span>
+            <span class="menu-nav__item__texto menu-nav__item__texto--ativo"
+              >Comunidade</span
+            >
           </a>
         </div>
       </aside>
-      <section class="projetos">
-        <div class="projeto">
-          <div class="projeto__codigo">
-            <pre class="projeto__codigo__conteudo">
-              <img src="./src/img/mac-buttons.svg" alt="" class="mac-buttons" />
-              <code id="codigo" class="editor__box">Aqui vai o código.</code>
-            </pre>
-          </div>
-          <div class="projeto__postagem">
-            <div class="projeto__infos">
-              <h3 class="projeto__infos__titulo">Título do projeto</h3>
-              <p class="projeto__infos__descricao">
-                Essa é a descrição do meu projeto.
-              </p>
-            </div>
-            <div class="projeto__interacoes">
-              <div class="interacoes">
-                <div class="interacoes__comentarios">
-                  <i class="fa-solid fa-comment"></i>
-                  <span class="interacoes__comentarios__numeros">9</span>
-                </div>
-                <div class="interacoes__reacoes">
-                  <i class="fa-solid fa-heart"></i>
-                  <span class="interacoes__reacoes__numeros">9</span>
-                </div>
-              </div>
-              <div class="usuario">
-                <img
-                  src="./src/img/foto-login.png"
-                  alt="Foto de perfil do usuário"
-                  class="usuario__foto"
-                />
-                <span class="usuario__nome">@Harry</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section class="projetos"></section>
     </main>
 
     <script type="module" src="./src/js/comunidade.js"></script>
+    <script type="module" src="./src/js/favoritar.js"></script>
   </body>
 </html>

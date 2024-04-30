@@ -63,6 +63,13 @@
   border-radius: 16px;
 }
 
+.botao-favorito {
+  background-color: transparent;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+
 .interacoes__comentarios__numeros,
 .interacoes__reacoes__numeros {
   padding-left: 0.5em;

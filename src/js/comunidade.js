@@ -1,13 +1,12 @@
 import { abrirFecharMenu } from "./abrirFecharMenu.js";
 import { abrirInputPesquisar } from "./abrirInputPesquisar.js";
+import { mostrarProjetos } from "./mostrarProjeto.js";
 
 const botaoMenu = document.querySelector(".menu-botao");
-const botaoPesquisar = document.querySelector(".pesquisar-botao");
-const favorito = document.querySelector(".interacoes__reacoes");
-const iconeFavoritar = document.querySelector(".fa-heart");
+const botaoPesquisar = document.getElementById("pesquisar-botao");
 
-favorito.addEventListener("click", () => {
-  iconeFavoritar.classList.toggle('fill')
+window.addEventListener("DOMContentLoaded", () => {
+  mostrarProjetos();
 });
 
 botaoPesquisar.addEventListener("click", () => {
@@ -17,3 +16,4 @@ botaoPesquisar.addEventListener("click", () => {
 botaoMenu.addEventListener("click", () => {
   abrirFecharMenu();
 });
+

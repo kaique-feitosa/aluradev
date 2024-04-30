@@ -44,8 +44,8 @@
           </button>
           <ul id="menu-lista" class="menu__lista">
             <li class="menu__item">
-              <a href="./index.html" class="menu__link">
-                <div class="menu__link__icone">
+              <a href="./index.html" class="menu__link menu__link--ativo">
+                <div class="menu__link__icone menu__link__icone--ativo">
                   <img
                     src="./src/img/icone-editor.svg"
                     alt=""
@@ -92,25 +92,25 @@
       <aside class="menu-navegacao">
         <div class="menu-nav">
           <span class="menu-nav__titulo">Menu</span>
-          <a href="./index.html" class="menu-nav__item">
-            <div class="menu-nav__item__icone">
+          <a href="./index.html" class="menu-nav__item menu-nav__item--ativo">
+            <div class="menu-nav__item__icone menu-nav__item__icone--ativo">
               <img
                 src="./src/img/icone-editor.svg"
                 alt=""
                 class="menu-nav__item__imagem"
               />
             </div>
-            <span class="menu-nav__item__texto branco">Editor de código</span>
+            <span class="menu-nav__item__texto menu-nav__item__texto--ativo">Editor de código</span>
           </a>
-          <a href="./comunidade.html" class="menu-nav__item">
-            <div class="menu-nav__item__icone">
+          <a href="./comunidade.html" class="menu-nav__item comunidade">
+            <div class="menu-nav__item__icone icone-comunidade">
               <img
                 src="./src/img/icone-comunidade.svg"
                 alt=""
                 class="menu-nav__item__imagem"
               />
             </div>
-            <span class="menu-nav__item__texto">Comunidade</span>
+            <span class="menu-nav__item__texto texto-comunidade">Comunidade</span>
           </a>
         </div>
       </aside>
@@ -129,30 +129,30 @@
         <button class="botao-highlight">Visualizar com o highlight</button>
       </section>
       <aside class="menu-criacao">
-        <form class="formulario">
+        <form id="formulario" class="formulario">
           <div class="formulario__inputs">
             <span class="formulario__inputs__titulo">Seu projeto</span>
             <input
               type="text"
-              name="nome-projeto"
               id="nome-projeto"
               class="formulario__inputs__nome"
               placeholder="Nome do seu projeto"
+              required
             />
             <input
               type="text"
-              name="descricao-projeto"
               id="descricao-projeto"
               class="formulario__inputs__descricao"
               placeholder="Descrição do seu projeto"
+              required
             />
           </div>
           <div class="formulario__select">
             <span class="formulario__select__titulo">Personalização</span>
             <select
-              name="linguagens"
               id="linguagens"
               class="formulario__select__linguagens"
+              required
             >
               <option value="Selecionar linguagem" selected disabled>
                 Selecione uma linguagem
@@ -167,7 +167,6 @@
 
             <input
               type="color"
-              name="cor-linguagem"
               id="cor-linguagem"
               class="formulario__select__cor"
               value="#FFFFFF"
